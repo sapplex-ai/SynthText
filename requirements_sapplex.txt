@@ -1,0 +1,15 @@
+omegaconf == 2.0.5
+pandas == 1.1.5
+#torch == 1.7.1
+#torchvision == 0.8.2
+yapf == 0.30.0
+h5py == 3.1.0
+matplotlib == 3.3.3
+opencv-python >= 4.4.0
+pygame == 2.0.0
+scipy >=0
+jupyter >=0
+timm >=0
+tqdm >=0
+connected-components-3d >=0
+scikit-image >= 0
