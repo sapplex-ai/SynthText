@@ -1,3 +1,21 @@
+
+# SynthText-sapplex
+1. Switch to the branch `sapplex`  
+2. Download the directory containing sample images `seg_inputs`: https://drive.google.com/drive/folders/13gHvj-QYp9AU-EEWa0emVJMwjYD9-Qo0
+3. Build the docker image:
+
+```
+docker build -t synthtext-sapplex:1.0 .
+```
+4. Run jupyter notebooks to run synthtext with our settings:
+```
+docker run -it --rm --volume="`pwd`:/app:rw" -p 5200:5200
+ synthtext-sapplex:1.0  jupyter notebook --allow-root --port 5200 --ip=0.0.0.0
+
+```
+
+
+The original README below:
 # SynthText
 Code for generating synthetic text images as described in ["Synthetic Data for Text Localisation in Natural Images", Ankush Gupta, Andrea Vedaldi, Andrew Zisserman, CVPR 2016](http://www.robots.ox.ac.uk/~vgg/data/scenetext/).
 
